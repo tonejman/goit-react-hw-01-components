@@ -1,0 +1,66 @@
+.statistics {
+  text-align: center;
+  box-shadow: 3px 6px 10px -1px rgb(92, 94, 110);
+  border-radius: 0 0 4px 4px;
+  width: 320px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.stat_list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  margin-bottom: 0;
+  padding-inline-start: 0px;
+}
+
+.stat_list :last-child {
+  border-radius: 0 0 4px 0;
+}
+
+.stat_list :first-child {
+  border-radius: 0 0 0 4px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 10px;
+}
+
+.docx {
+  composes: item;
+  background-color: rgb(77, 179, 59);
+}
+
+.pdf {
+  composes: item;
+  background-color: rgb(202, 97, 202);
+}
+
+.mp3 {
+  composes: item;
+  background-color: rgb(209, 57, 57);
+}
+
+.psd {
+  composes: item;
+  background-color: rgb(76, 133, 214);
+}
+
+.label {
+  font-size: 13px;
+  color: white;
+  padding-bottom: 7px;
+}
+
+.percentage {
+  font-size: 20px;
+  color: white;
+}
